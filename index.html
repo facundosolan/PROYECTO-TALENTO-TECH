@@ -3,66 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto TALENTO-TECH</title>
+    <title>Pizzeria El Diego</title>
     <link rel="icon" href="contenido/imagenes/firma_diego.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- ENCABEZADO -->
+
     <header class="encabezado">
-        <img class="imagenLogo" src="contenido/imagenes/logo-Photoroom.png" alt="imagen logo pizza">
+        <img class="imagenLogo" src="contenido/imagenes/imagenes logos/logo-Photoroom.png" alt="imagen logo pizza">
         <h1 class="titulo">Pizzeria El Diego</h1>      
     </header>
-    <main>        
+
+    <main>
+        
+        <!-- BARRA DE NAVEGACION -->
+        
         <nav class="barraNavegacion">
             <ul class="listaNavegacion">
-                <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="nuestrosProductos.html" class="nuestrosProductos">Nuestros Productos</a> </li>
-                <li><a href="quienesSomos.html" class="quienesSomos">Quienes Somos</a></li>
-                <li><a href="contacto.html" class="contacto">Contacto</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nuestrosProductos.html">Nuestros Productos</a> </li>
+                <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>        
+        </nav>
+
+        <!-- SECCION FOTO Y VIDEO -->
         
         <section class="foto">
             <img width="500" height="500" src="contenido/imagenes/diego-maradona-cuartetas.jpg" alt="maradona comiendo pizza">
             <p class="parrafoFoto">Podriamos hablar horas de Diego, sus goles, sus jugadas, sus pasiones... en esta ultima nos queremos detener para concentrarnos en una en particular: su devocion por la pizza. Esa pasion nos inspira todos los dias para hacer nuestro trabajo, llevarles la mejor pizza de Buenos Aires, estilo 100% argentina, como lo era el y como lo somos todos. </p>
         </section>
         
-        <section class="video">
+        <section class="seccionVideo">
             <p class="parrafoVideo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde tempore deserunt possimus voluptatem illum dolore modi dolores at? Provident id quibusdam expedita vel reiciendis nemo debitis eaque iste dignissimos suscipit?</p>
-            <iframe width="500" height="500" src="https://www.youtube.com/embed/-l4mFqx1QhY" title="Me TATUÉ a DIEGO MARADONA comiendo PIZZA en PIZZERÍAS LAS CUARTETAS 🔟🍕" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/-l4mFqx1QhY" title="Me TATUÉ a DIEGO MARADONA comiendo PIZZA en PIZZERÍAS LAS CUARTETAS 🔟🍕" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+
+        <!-- CARDS -->
 
         <section class="cardContainer">
             <div class="card">
-                <img class="imagenPizza" src="contenido/imagenes/tarjetapizza.png" alt="imagen pizza">
+                <img class="imagen-card" src="contenido/imagenes/tarjetapizza.png" alt="imagen pizza">
                 <div class="cardContenido">
                     <h3>Pizzas</h3>
-                    <p class="pizzaParrafo">Lorem ipsum, dolor sit amet consectetur</p>
-                    <a href="" class="btn">Hacer pedido</a>
+                    <a href="nuestrosProductos.html" class="btn">Hacer pedido</a>
                 </div>
             </div>
 
             <div class="card">
-                <img class="imagenEmpanada" src="contenido/imagenes/tarjetaempanada.png" alt="imagen empanada">
+                <img class="imagen-card" src="contenido/imagenes/tarjetaempanada.png" alt="imagen empanada">
                 <div class="cardContenido">
                     <h3>Empanadas</h3>
-                    <p class="empanadaParrafo">Lorem ipsum, dolor sit amet consectetur.</p>
-                    <a href="" class="btn">Hacer pedido</a>
+                    <a href="nuestrosProductos.html" class="btn">Hacer pedido</a>
                 </div>
             </div>
 
             <div class="card">
-                <img class="imagenHamburguesa" src="contenido/imagenes/tarjetahamburguesa.png" alt="imagen hanburguesa">
+                <img class="imagen-card" src="contenido/imagenes/tarjetahamburguesa.png" alt="imagen hanburguesa">
                 <div class="cardContenido">
                     <h3>Hamburguesas</h3>
-                    <p class="hamburguesaParrafo">Lorem ipsum, dolor sit amet consectetur.</p>
-                    <a href="" class="btn">Hacer pedido</a>
+                    <a href="nuestrosProductos.html" class="btn">Hacer pedido</a>
                 </div>
             </div>
         </section>
+
+        <!-- RESEÑAS -->
+
+        <section class="contenedor-reseñas">
+            <div class="reseña">
+                <h3>La de muzza es una locura</h3>
+                <p>La mejor que probe en un monton de tiempo...</p>
+            </div>
+            <div class="reseña">
+                <h3>Esperamos volver pronto</h3>
+                <p>Super atentos en todo momento. Recomendable...</p>
+            </div>
+            <div class="reseña">
+                <h3>Atencion excelente</h3>
+                <p>Punto altisimo el buen trato y hamabilidad...</p>
+            </div>
+            <div class="reseña">
+                <h3>Variedad y calidad, recomiendo</h3>
+                <p>De las mejores de Buenos Aires, sin dudas...</p>
+            </div>
+            <div class="reseña">
+                <h3>Ame las empanadas</h3>
+                <p>Todo muy rico pero las empanadas se llevan el premio...</p>
+            </div>
+            <div class="reseña">
+                <h3>Nos trataron muy bien</h3>
+                <p>Esperamos volver pronto...</p>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="footer">
         <p class="parrafoFooter">BUSCANOS EN NUESTRAS REDES</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/?locale=es_LA"><img class="logo-redes" src="/contenido/imagenes/imagenes logos/Facebook_logo.png" alt="logo facebook"><a>
+            <a href="https://www.instagram.com/"><img class="logo-redes" src="/contenido/imagenes/imagenes logos/Instagram_logo.png" alt="logo instagram"><a>                
+            <a href="https://web.whatsapp.com/"><img class="logo-redes" src="/contenido/imagenes/imagenes logos/WhatsApp_logo.jpg" alt="logo whatsapp"></a>
+        </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

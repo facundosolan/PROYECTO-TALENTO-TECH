@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Mouse Memoirs", sans-serif;
 }
 
 .listaNavegacion{
@@ -12,10 +12,11 @@
     font-size: 40px;
     padding: 3.5rem 4.5rem 4rem 4.5rem;
     margin: 0;
+    font-size: 4rem;
 }
 .titulo{
     font-style: normal;
-    font-size: 120px;
+    font-size: 9.5rem;
 }
 .encabezado{
     display: flex;
@@ -43,24 +44,8 @@
     border: 0;
 }
 
-.home {
+.barraNavegacion li a{
     text-decoration: none;
-    color: rgba(8, 0, 255, 0.409);
-}
-
-.nuestrosProductos{
-    text-decoration: none;
-    color: rgba(8, 0, 255, 0.409);
-}
-
-.quienesSomos{
-    text-decoration: none;
-    color: rgba(8, 0, 255, 0.409);
-}
-
-.contacto{
-    text-decoration: none;
-    color: rgba(8, 0, 255, 0.409);
 }
 
 .foto{
@@ -69,16 +54,21 @@
     padding: 30px;
 }
 
-.video{
+.seccionVideo{
     background-color: black;
     display: flex;
+    justify-content: space-around;
+    padding: 8rem;
 }
 
 .parrafoVideo{
     color: white;
-    margin: 0;
-    padding: 90px 90px 20px 90px;
     font-size: xx-large;
+    padding: 2rem;
+}
+
+.video{
+    width: 100%;
 }
 
 .cardContainer{
@@ -104,23 +94,7 @@
     margin-bottom: 8px;
 }
 
-.cardContenido p{
-    color: white;
-    font-size: 15px;
-    line-height: 1.3;
-}
-
-.imagenPizza{
-    width: 20rem;
-    height: 15rem;
-}
-
-.imagenEmpanada{
-    width: 20rem;
-    height: 15rem;
-}
-
-.imagenHamburguesa{
+.imagen-card{
     width: 20rem;
     height: 15rem;
 }
@@ -135,4 +109,39 @@
 .parrafoFooter{
     font-size: 30px;
     padding: 20px;
+}
+/*
+.reseñas{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            10rem,
+            1fr));
+        gap: 2rem;
+}
+*/
+
+.contenedor-reseñas {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    padding: 2rem;
+    background-color: black;
+}
+
+.reseña{
+    min-height: 15rem;
+    border: solid;
+    background-color: gray;
+    font-size: 1.3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-redes{
+    width: 4.5rem;
+    height: 4.5rem;
 }

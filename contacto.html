@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Pizzeria El Diego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesPaginas.css">
 </head>
 <body>
-    <header>
+    <header class="encabezado">
+        <img class="imagenLogo" src="contenido/imagenes/imagenes logos/logo-Photoroom.png" alt="imagen logo pizza">
         <h2>Contacto</h2>
     </header>
     <main>
         <nav>
-            <ul>
+            <ul class="listaNavegacion">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="nuestrosProductos.html">Nuestros Productos</a></li>
                 <li><a href="quienesSomos.html">Quienes Somos</a></li>
             </ul>
         </nav>
-        <form action="https://formspree.io/f/mbljjgae" method="POST">
 
-            <label for="nombre">nombre</label>            
-            <input name="nombre" id="nombre" type="text">
+        <p class="texto-formulario">Dejanos tus datos y recibi promociones exclusivas</p>
 
-            <label for="email">Email</label>            
-            <input name="email" id="email" type="email">            
+        <form class="formulario" action="https://formspree.io/f/mbljjgae" method="POST">
+
+            <label class="categoria-contacto" for="nombre">Nombre</label>            
+            <input class="input" name="nombre" id="nombre" type="text">
+
+            <label class="categoria-contacto" for="edad">Edad</label>            
+            <input class="input" name="edad" id="edad" type= "number">
+
+            <label class="categoria-contacto" for="email">Email</label>            
+            <input class="input" name="email" id="email" type="email">            
             
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="message"></textarea>
+            <label class="categoria-contacto" for="mensaje">Mensaje:</label>
+            <textarea class="input-message" name="message"></textarea>
             
             <!-- your other form fields go here -->
-            <button type="submit">Enviar</button>
+            <button class="boton-enviar" type="submit">Enviar</button>
         </form>
 
     </main>
+
+    <script src="scripts.js"></script>
 
     <footer>
 
