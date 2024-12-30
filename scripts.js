@@ -85,7 +85,7 @@ let comidas = "";
 for (let indice = 0 ; indice < productos.length; indice++){ 
 
      comidas += `
-                    <div class="item-menu">
+                <div class="item-menu">
                     <div>
                         <p>${productos[indice].nombre}</p>
                         <p>$${productos[indice].precio}</p>
@@ -96,9 +96,62 @@ for (let indice = 0 ; indice < productos.length; indice++){
 
 }
 
-const contenedorProductos = document.getElementById("contenedorCursos");
+const contenedorProductos = document.getElementsByClassName("contenedorProductos");
 contenedorProductos.innerHTML = comidas;
 
-const btnAgregar = document.querySelectorAll(".boton-agregar")
+const btnAgregar = document.querySelectorAll(".boton-agregar");
 
-console.log(comidas);
+const listaCarrito = document.querySelector("#carrito ul");
+
+const totalCarrito = document.querySelector("#carrito p");
+
+const mensajePagarCarrito = document.getElementById("mensaje")
+
+let totalAPagar = 0;
+
+ for(let indice = 0; indice < btnAgregar.length; indice++){
+    
+    function agregarElemCarrito(){
+        const elementoLi = document.createElement("li");
+        
+        elementoLi.innerText = `${productos[indice].nombre} $${productos[indice].precio}`;
+        
+        listaCarrito.appendChild(elementoLi);
+
+        totalAPagar += productos[indice].precio;
+
+        totalCarrito.innerText = "Total a Pagar: $ " + totalAPagar;
+
+        mensajePagarCarrito.innerText = "";
+    }
+    
+    btnAgregar[indice].addEventListener("click", agregarElemCarrito);
+ }
+
+const botonBorrar = document.querySelector("#btnBorrar")
+
+
+
+function borrarCarrito(){
+    listaCarrito.innerHTML = "";
+    totalCarrito.innerHTML = "Total a pagar: $0";
+    totalAPagar = 0;
+    mensajePagarCarrito.innerText = "";
+}
+
+botonBorrar.addEventListener("click", borrarCarrito);
+
+const botonPagar = document.querySelector("#btnPagar");
+
+function irAPagar(){
+
+    if(listaCarrito.innerText === ""){
+        mensajePagarCarrito.innerText = "No hay productos en el carrito";
+    } else {
+    
+        window.location.href = "./pagos.html"
+    }
+}
+
+botonPagar.addEventListener("click", irAPagar);
+

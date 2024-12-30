@@ -41,7 +41,12 @@ h2 {
     font-size: 4rem;
 }
 
-.productos {
+#carrito{
+    color: white;
+    font-size: 30px;
+}
+
+.contenedorProductos {
     max-width: 600px;
     margin: auto;
     background: black;
@@ -80,7 +85,7 @@ button:hover {
     color: #555;
 }
 
-.productos div h3{
+.contenedorProductos div h3{
     font-size: 4rem;
     color: white;
 }
